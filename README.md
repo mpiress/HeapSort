@@ -68,6 +68,22 @@ Uma vez estabelecida as regras do Heap Sort,  podemos definir o método propriam
 A execução inicia chamando a função HeapSort, passando o conjunto de elementos e o tamanho do vetor. Note que a primeira linha da função chama o construtor do Heap, a função BuildHeap. Nela, o valor de N é dividido por dois para encontrar o último nó pai valido do conjunto. Feito isso, o pai vai retrocedendo até chegar à raiz ou cabeça do vetor. A cada interação da função ReBuildHeap o conjunto de elementos é passado e junto a esse um ponteiro para o pai (representado no ReBuildHeap por left) e um para o fim do conjunto N (representado no ReBuildHeap por right). Em ReBuildHeap, a regra de manter todos os nós pai maiores ou menores que seus filhos é revisada e, caso necessário, movimentações no heap são feitas para reestabelecer a estrutura correta Min ou Max Heap.
 </p>
 
+
+<div align="justify">
+
+> <b>Vantagens:</b> 
+> 
+> - Seu custo, o qual se mantem em <img src="https://render.githubusercontent.com/render/math?math=\mathcal{O}(n\log{}n)"> para qualquer que seja o conjunto de entrada. Além disso, por não utilizar nenhuma recursão não há necessidade da utilização de memória extra para a execução, o que se torna um ponto positovo do método. 
+</div>
+
+<div align="justify">
+
+> <b>Desvantagens:</b> 
+>
+> - A sequência de execução do método é uma das mais complexas dentre os algoritmos de custo <img src="https://render.githubusercontent.com/render/math?math=\mathcal{O}(n\log{}n)">, mesmo quando comparado com métodos como o QuickSort. Além disso, trata-se de um método não estável, o que pode introduzir custo adicional de movimentação quando há elementos repetidos no conjunto.
+
+</div>
+
 # Compilação e Execução
 
 O método Heap Sort disponibilizado possui um arquivo Makefile que realiza todo o procedimento de compilação e execução. Para tanto, temos as seguintes diretrizes de execução:
