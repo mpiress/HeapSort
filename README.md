@@ -1,7 +1,3 @@
-<style>
-    table {width: 100%;}
-</style>
-
 # Heap Sort: Implementação em C
 
 <div style="display: inline-block;">
@@ -22,7 +18,7 @@ Apresentado em 1964 por Robert W. Floyd e J.W.J Williams, o Heap Sort é um mét
 </p>
 
 <p align="justify">
-Em literatura, há diferentes maneiras de se implementar o Heap Sort, as mais comums utilizam filas de prioridade e/ou heaps para representar sua estrutura interna. As filas de prioridade são comuns em Sistemas Operacionais e apresentam, dentre suas funções, a capacidade de mapear o tempo de execução de processos, rastrear páginas em memória a serem substituídas e gerenciar processos. Como Heap, assumem funções generalistas e podem ser aplicadas nos mais diversos problemas que envolvam ordenação. Vejamos a seguir os custos envolvidos com ambas as estruturas de apoio. 
+Em literatura, há diferentes maneiras de se implementar o Heap Sort, as mais comums utilizam listas de prioridade (LP) e/ou heaps para representar sua estrutura interna. As listas de prioridade são comuns em Sistemas Operacionais e apresentam, dentre suas funções, a capacidade de mapear o tempo de execução de processos, rastrear páginas em memória a serem substituídas e gerenciar processos. Como Heap, assumem funções generalistas e podem ser aplicadas nos mais diversos problemas que envolvam ordenação. Vejamos a seguir os custos envolvidos com ambas as estruturas de apoio. 
 </p>
 
 <div align="center">
@@ -36,3 +32,16 @@ Em literatura, há diferentes maneiras de se implementar o Heap Sort, as mais co
 | União (vetor)   |<img src="https://render.githubusercontent.com/render/math?math=\mathcal{O}(n)">|<img src="https://render.githubusercontent.com/render/math?math=\mathcal{O}(n)">|<img src="https://render.githubusercontent.com/render/math?math=\mathcal{O}(n\log{}n)">|
 
 </div>
+
+
+<p align="justify">
+Embora a lista por prioridade apresente resultados melhores, sua estrutura é limitada o que faz do Heap a melhor opção dentre as três. Nesse contexto, há estudos que podem melhorar o desempenho do método quando estruturado sob um heap. por exemplo, utilizando como estrutura de apoio árvores binomiais ![vide teoria](https://pt.wikipedia.org/wiki/Heap_binomial).  
+</p>
+
+<p align="justify">
+Como pode ser observado, métodos de ordenação por heaps tendem a utilizar estruturas abstratas de dados (i.e., TADs) cujas ações o permitem definir uma hierarquia em árvore dos elementos armazenados. Nessa hierarquia cada elemento do conjunto de entrada pode ser considerado um nó pai ou filho. Um modelo por animação dessa estrutura pode ser observada abaixo.
+</p>
+
+<p align="center">
+	<img src="imgs/Heapsort-example.gif"/> 
+</p> 
