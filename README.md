@@ -21,7 +21,7 @@ Apresentado em 1964 por Robert W. Floyd e J.W.J Williams, o Heap Sort é um mét
 Em literatura, há diferentes maneiras de se implementar o Heap Sort, as mais comums utilizam filas de prioridade e/ou heaps para representar sua estrutura interna. As filas de prioridade são comuns em Sistemas Operacionais e apresentam, dentre suas funções, a capacidade de mapear o tempo de execução de processos, rastrear páginas em memória a serem substituídas e gerenciar processos. Como Heap, assumem funções generalistas e podem ser aplicadas nos mais diversos problemas que envolvam ordenação. Vejamos a seguir os custos envolvidos com ambas as estruturas de apoio. 
 </p>
 
-<p align="justify">
+<center>
 
 | Custo           |  LP Ordenada            | LP não Ordenada         | Heap                    |
 |:----------------|:-----------------------:|:-----------------------:|:-----------------------:|
@@ -31,4 +31,4 @@ Em literatura, há diferentes maneiras de se implementar o Heap Sort, as mais co
 | União (ponteiro)|<img src="https://render.githubusercontent.com/render/math?math=\mathcal{O}(n)">|<img src="https://render.githubusercontent.com/render/math?math=\mathcal{O}(1)">|<img src="https://render.githubusercontent.com/render/math?math=\mathcal{O}(n\log{}n)">|
 | União (vetor)   |<img src="https://render.githubusercontent.com/render/math?math=\mathcal{O}(n)">|<img src="https://render.githubusercontent.com/render/math?math=\mathcal{O}(n)">|<img src="https://render.githubusercontent.com/render/math?math=\mathcal{O}(n\log{}n)">|
 
-</p>
+</center>
