@@ -35,7 +35,7 @@ Em literatura, há diferentes maneiras de se implementar o Heap Sort, as mais co
 
 
 <p align="justify">
-Embora a lista por prioridade apresente resultados melhores, sua estrutura é limitada o que faz do Heap a melhor opção dentre as três. Nesse contexto, há estudos que podem melhorar o desempenho do método quando estruturado sob um heap. por exemplo, utilizando como estrutura de apoio árvores binomiais ![vide teoria](https://pt.wikipedia.org/wiki/Heap_binomial).  
+Embora a lista por prioridade apresente resultados melhores, sua estrutura é limitada o que faz do Heap a melhor opção dentre as três. Nesse contexto, há estudos que podem melhorar o desempenho do método quando estruturado sob um heap. por exemplo, utilizando como estrutura de apoio árvores binomiais [vide teoria](https://pt.wikipedia.org/wiki/Heap_binomial).  
 </p>
 
 <p align="justify">
