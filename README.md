@@ -55,3 +55,46 @@ Como pode ser observado, métodos de ordenação por heaps tendem a utilizar est
 > - O elemento posicionado na primeira posição do Heap é chamado de elemento raiz e é sempre o maior elemento do conjunto.  
 
 </div>
+
+<p align="justify">
+Uma vez estabelecida as regras do Heap Sort,  podemos definir o método propriamente dito a partir de três funções, uma para construir o Heap (i.e., BuildHeap), uma função para reconstruir o heap a cada movimentação (i.e., ReBuildHeap) e uma função principal, a própria HeapSort. A seguir tem-se o pseudo algoritmo representativo para essas funções.
+</p>
+
+<p align="center">
+	<img src="imgs/heapsort.png"/> 
+</p> 
+
+<p align="justify">
+A execução inicia chamando a função HeapSort, passando o conjunto de elementos e o tamanho do vetor. Note que a primeira linha da função chama o construtor do Heap, a função BuildHeap. Nela, o valor de N é dividido por dois para encontrar o último nó pai valido do conjunto. Feito isso, o pai vai retrocedendo até chegar à raiz ou cabeça do vetor. A cada interação da função ReBuildHeap o conjunto de elementos é passado e junto a esse um ponteiro para o pai (representado no ReBuildHeap por left) e um para o fim do conjunto N (representado no ReBuildHeap por right). Em ReBuildHeap, a regra de manter todos os nós pai maiores ou menores que seus filhos é revisada e, caso necessário, movimentações no heap são feitas para reestabelecer a estrutura correta Min ou Max Heap.
+</p>
+
+# Compilação e Execução
+
+O método Heap Sort disponibilizado possui um arquivo Makefile que realiza todo o procedimento de compilação e execução. Para tanto, temos as seguintes diretrizes de execução:
+
+<div align="center">
+
+| Comando                |  Função                                                                                           |
+| -----------------------| ------------------------------------------------------------------------------------------------- |
+|  `make clean`          | Apaga a última compilação realizada contida na pasta build                                        |
+|  `make`                | Executa a compilação do programa utilizando o gcc, e o resultado vai para a pasta build           |
+|  `make run`            | Executa o programa da pasta build após a realização da compilação                                 |
+
+</div>
+
+# Contatos
+
+<div style="display: inline-block;">
+<a href="https://t.me/michelpires369">
+<img align="center" height="20px" width="90px" src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"/> 
+</a>
+
+<a href="https://www.linkedin.com/in/michelpiressilva/">
+<img align="center" height="20px" width="90px" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
+</a>
+
+</div>
+
+<a style="color:black" href="mailto:michel@cefetmg.br?subject=[GitHub]%20Source%20Dynamic%20Lists">
+✉️ <i>michel@cefetmg.br</i>
+</a>
