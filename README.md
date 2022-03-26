@@ -22,7 +22,6 @@ Em literatura, há diferentes maneiras de se implementar o Heap Sort, as mais co
 </p>
 
 <center>
-
 | Custo           |  LP Ordenada            | LP não Ordenada         | Heap                    |
 |:----------------|:-----------------------:|:-----------------------:|:-----------------------:|
 | Construção      |<img src="https://render.githubusercontent.com/render/math?math=\mathcal{O}(n\log{}n)">|<img src="https://render.githubusercontent.com/render/math?math=\mathcal{O}(n)">|<img src="https://render.githubusercontent.com/render/math?math=\mathcal{O}(n)">|
@@ -30,5 +29,4 @@ Em literatura, há diferentes maneiras de se implementar o Heap Sort, as mais co
 | Remoção         |<img src="https://render.githubusercontent.com/render/math?math=\mathcal{O}(1)">|<img src="https://render.githubusercontent.com/render/math?math=\mathcal{O}(n)">|<img src="https://render.githubusercontent.com/render/math?math=\mathcal{O}(n\log{}n)">| 
 | União (ponteiro)|<img src="https://render.githubusercontent.com/render/math?math=\mathcal{O}(n)">|<img src="https://render.githubusercontent.com/render/math?math=\mathcal{O}(1)">|<img src="https://render.githubusercontent.com/render/math?math=\mathcal{O}(n\log{}n)">|
 | União (vetor)   |<img src="https://render.githubusercontent.com/render/math?math=\mathcal{O}(n)">|<img src="https://render.githubusercontent.com/render/math?math=\mathcal{O}(n)">|<img src="https://render.githubusercontent.com/render/math?math=\mathcal{O}(n\log{}n)">|
-
 </center>
