@@ -45,3 +45,13 @@ Como pode ser observado, métodos de ordenação por heaps tendem a utilizar est
 <p align="center">
 	<img src="imgs/Heapsort-example.gif"/> 
 </p> 
+
+<div align="justify">
+
+> Considerando a animação acima apresentada e dado um conjunto de elementos <b><e1, e2, . . . , en></b> tem-se que:
+>
+> - Os elementos filhos de um nó pai cuja a posição é i estarão armazenados nas posições 2i e 2i+1 do vetor e esses serão menores em valor do que o pai se estivermos tratando de um Max Heap ou o pai será o menor valor dentre eles se estivermos tratando de um Min Heap.
+>
+> - O elemento posicionado na primeira posição do Heap é chamado de elemento raiz e é sempre o maior elemento do conjunto.  
+
+</div>
