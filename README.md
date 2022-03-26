@@ -28,7 +28,7 @@ Em literatura, há diferentes maneiras de se implementar o Heap Sort, as mais co
 | Custo           |  LP Ordenada            | LP não Ordenada         | Heap                    |
 |:----------------|:-----------------------:|:-----------------------:|:-----------------------:|
 | Construção      |<img src="https://render.githubusercontent.com/render/math?math=\mathcal{O}(n\log{}n)">|<img src="https://render.githubusercontent.com/render/math?math=\mathcal{O}(n)">|<img src="https://render.githubusercontent.com/render/math?math=\mathcal{O}(n)">|
-| Inserção        | $\mathcal{O}(n)$        | $\mathcal{O}(1)$        | $\mathcal{O}(n\log{}n)$ |
+| Inserção        |<img src="https://render.githubusercontent.com/render/math?math=\mathcal{O}(n)">|<img src="https://render.githubusercontent.com/render/math?math=\mathcal{O}(1)">|<img src="https://render.githubusercontent.com/render/math?math=\mathcal{O}(n\log{}n)">|
 | Remoção         | $\mathcal{O}(1)$        | $\mathcal{O}(n)$        | $\mathcal{O}(n\log{}n)$ | 
 | União (ponteiro)| $\mathcal{O}(n)$        | $\mathcal{O}(1)$        | $\mathcal{O}(n\log{}n)$ |
 | União (vetor)   | $\mathcal{O}(n)$        | $\mathcal{O}(n)$        | $\mathcal{O}(n\log{}n)$ |
