@@ -1,3 +1,7 @@
+<style>
+    table {width: 100%;}
+</style>
+
 # Heap Sort: Implementação em C
 
 <div style="display: inline-block;">
