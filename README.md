@@ -22,6 +22,7 @@ Em literatura, há diferentes maneiras de se implementar o Heap Sort, as mais co
 </p>
 
 <center>
+	
 | Custo           |  LP Ordenada            | LP não Ordenada         | Heap                    |
 |:----------------|:-----------------------:|:-----------------------:|:-----------------------:|
 | Construção      |<img src="https://render.githubusercontent.com/render/math?math=\mathcal{O}(n\log{}n)">|<img src="https://render.githubusercontent.com/render/math?math=\mathcal{O}(n)">|<img src="https://render.githubusercontent.com/render/math?math=\mathcal{O}(n)">|
