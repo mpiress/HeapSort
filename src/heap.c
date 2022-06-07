@@ -25,44 +25,37 @@ void Imprime(Vector *v, int right){
 }
 
 
-// vet, 2, 6
-void RebuildHeap(Vector *v, int left, int right){
-	int i = left; // 2
-	int child = (2*i) + 1; //5
+void RebuildHeap(Vector *v, int left){
+	int i = left;
+	int child = (left > 0)?(i*2):1;
+
+	if((child+1 < MAXSIZE) && (v->itens[child] < v->itens[child+1]))
+		child = child + 1;
+	if (v->itens[i] < v->itens[child])
+		Swap(&v->itens[i], &v->itens[child]);
 	
-	while(child+1 < right){
-		if(v->itens[child] < v->itens[child+1])
-			child = child + 1;
-		if (v->itens[i] < v->itens[child])
-			Swap(&v->itens[i], &v->itens[child]);
-		i = child;
-		child = (2 * i) + 1;
-	}
 }
 
-void BuildHeap(Vector *v){
-	int left = (MAXSIZE/2); // [6, 2, 3, 4, x, x]
+void BuildHeap(Vector *v, int right){
+	int left = (right/2);
 	while(left > 0){
-		left = left - 1; // 2
-		RebuildHeap(v, left, MAXSIZE);
+		left = left - 1; 
+		RebuildHeap(v, left);
 	}
 }
 
 
 void HeapSort(Vector *v){
-	int left, right;
-	
-	BuildHeap(v);
+	int left = 0;
+	int right = MAXSIZE;
 
-	left = 0;
-	right = MAXSIZE-1;
 	while(right > 0){
-		Swap(&v->itens[0], &v->itens[right]);
-		Imprime(v, right);
-		RebuildHeap(v, left, right);
 		right = right - 1;
-
+		BuildHeap(v, right);
+		Swap(&v->itens[left], &v->itens[right]);
+		Imprime(v, right);
 	}
+	
 }
 
 

@@ -6,7 +6,7 @@
 #include<stdbool.h>
 
 
-#define MAXSIZE 10
+#define MAXSIZE 7
 
 
 typedef struct Vector Vector;
@@ -19,8 +19,8 @@ void Initialize(Vector *v);
 void Imprime(Vector *v, int right);
 void Swap(int *a, int *b);
 
-void RebuildHeap(Vector *v, int left, int right);
-void BuildHeap(Vector *v);
+void RebuildHeap(Vector *v, int left);
+void BuildHeap(Vector *v, int right);
 void HeapSort(Vector *v);
 
 #endif
